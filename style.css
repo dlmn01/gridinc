@@ -1,0 +1,110 @@
+/* De basis van de website */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background-color: white;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    border: 5px solid cyan;
+    padding: 5px;
+}
+
+/* Mijn eigen grid systeem */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+}
+
+/* Bovenkant */
+header {
+    margin-bottom: 10px;
+}
+
+.vak {
+    grid-column: span 3;
+    border: 2px solid black;
+    height: 45px;
+}
+
+.titel {
+    grid-column: span 6;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+/* Middenstuk */
+.midden {
+    margin-bottom: 10px;
+}
+
+nav {
+    grid-column: span 4;
+    border: 2px solid black;
+    padding: 15px 10px;
+    min-height: 85vh;
+}
+
+nav a {
+    display: block;
+    color: blue;
+    margin-bottom: 3px;
+}
+
+main {
+    grid-column: span 8;
+    border: 2px solid black;
+    padding: 25px 10px;
+}
+
+section {
+    border-bottom: 2px solid gray;
+    padding: 20px 0 32px;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    margin: 0;
+}
+
+p {
+    margin-top: 0;
+}
+
+/* Onderkant */
+footer div {
+    grid-column: span 3;
+    border: 2px solid black;
+    padding: 10px;
+    min-height: 45px;
+}
+
+/* Voor kleinere schermen */
+@media screen and (max-width: 700px) {
+    .container {
+        width: 95%;
+    }
+
+    .vak, .titel {
+        grid-column: span 12;
+    }
+
+    nav, main {
+        grid-column: span 12;
+        min-height: auto;
+    }
+
+    footer div {
+        grid-column: span 6;
+    }
+}
