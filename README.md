@@ -2,10 +2,14 @@
 
 Oefenproject: een eenvoudige website met een CSS Grid-layout.
 
-## Bestanden
+## Live bekijken
 
-- `index.html` – de pagina zelf
-- `style.css` – de opmaak met CSS Grid
+**https://dlmn01.github.io/gridinc/**
+
+## Code
+
+- [index.html](index.html) – de pagina
+- [style.css](style.css) – de opmaak met CSS Grid
 
 ## Lokaal bekijken
 
